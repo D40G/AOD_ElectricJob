@@ -2,18 +2,19 @@ local Instartzone, Inspawnvehicle, Indeletecar, duty, needJob, atjobSite, jobCom
 
 
 if Config.Framework =='esx' then
-	ESX = nil
-	Citizen.CreateThread(function()
-		while ESX == nil do
-			TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-			Citizen.Wait(0)
-    	end
-	end)
+    ESX = nil
+    Citizen.CreateThread(function()
+        while ESX == nil do
+            TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+            Citizen.Wait(0)
+        end
+    end)
 elseif Config.Framework =='QBCore' then
-	QBCore = exports['qb-core']:GetCoreObject()
+    QBCore = exports['qb-core']:GetCoreObject()
 else
-	print('no framework set or standalone')
+    print('no framework set or standalone')
 end
+
 
 --customise these below
 
