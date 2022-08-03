@@ -6,7 +6,7 @@ Config.Framework = 'esx' --standalone, esx, QBCore
 
 Config.Payment = 'bank' -- bank or cash payment
 
-Config.Fuel = 'qb-fuel' --qb-fuel, lj-fuel, cc-fuel
+Config.Fuel = 'qb-fuel' --qb-fuel, lj-fuel, cc-fuel this only effects the qb side of stuff.  also can pass "whatever vehicle fuel string here" assuming they're just a rip off of LegacyFuels lol
 
 Config.EnableMarkers = false -- Do you want to enable markers?
 
